@@ -1,6 +1,6 @@
 if (window.top === window) {
   safari.self.addEventListener("message", function(event) {
-    if (event.name == "embed") {
+    if (event.name === "embed") {
       var e = document.createElement('script');
       e.setAttribute('type','text/javascript');
       e.setAttribute('charset','UTF-8');
